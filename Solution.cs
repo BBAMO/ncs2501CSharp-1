@@ -20,7 +20,7 @@ class Solution
     /// <returns></returns>
     public int solution0110(int num1, int num2)
     {
-        // 정상적인 계산으로 나올 수 없는 값을 기본값으로 해 준다
+        // 정상적인 계산으로 나올 수 없는 값을 기본값으로 해 준다 !
         int answer = -1;
         answer = num1 % num2;
         return answer;
