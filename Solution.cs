@@ -1,5 +1,11 @@
 class Solution
 {
+    /// <summary>
+    /// 양꼬치
+    /// </summary>
+    /// <param name="n"></param>
+    /// <param name="k"></param>
+    /// <returns></returns>
     public int solution01142(int n, int k)
     {
         int answer = 0;
