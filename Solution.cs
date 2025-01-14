@@ -1,5 +1,38 @@
 class Solution
 {
+    public int solution01142(int n, int k)
+    {
+        int answer = 0;
+        // 서비스 음료수가 몇 병이냐
+        int ser = n / 10;
+        //양꼬치 * 12000 + 음료수 * 2000 - 서비스 음료수 * 2000
+        answer = n * 12000 + k * 2000 - ser * 2000;
+       
+        return answer;
+    }
+    /// <summary>
+    /// 짝수의 합
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
+    public int solution0114(int n)
+    {
+        //계산된 값을 저장할 변수를 준비한다
+        int answer = 0;
+        //n까지 반복한다
+        for (int i = 1; i <= n; i++)
+        {
+            //짝수인가?
+            if (i % 2 == 0)
+            {
+                //짝수면 변수에 계산
+                answer += i;
+            }
+        }
+        //계산된 최종값을 리턴한다
+        return answer;
+    }
+
     /// <summary>
     /// 숫자 비교하기
     /// </summary>

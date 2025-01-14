@@ -1,32 +1,22 @@
+using System.Xml.Serialization;
+
 class Sample
 {
-    void DataType()
+    public void RandomSum()
     {
-        bool b = true;
+        int sum = 0;
+        int[] nums = new int[10];
 
-        short sh = -32768;
-        int i = 2147483647;
-        long l = 1234L;
-        float f = 123.45F;
-        double d1 = 123.45;
-        double d2 = 123.45D;
-        decimal d = 123.45M;
-
-        char c = 'A';
-        string s = "Hello";
-
-        // == !=
-        if (s[0] != 'e')
-            b = true;
-        else
-            b = false;
-
-        DateTime dt = new DateTime(2025, 1, 13, 10, 24, 00);
-
-        // max, min
-        int i2 = 0;
-
-        //if (i2 > 2147483647) ;
-        if (i2 > int.MaxValue) ;
+        Random rand = new Random();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            nums[i] = rand.Next() % 100;
+            Console.WriteLine("nums["+i+"]:" + nums[i]);
+        }
+        for (int i = 0; i < nums.Length; i++)
+        {
+            sum += nums[i];
+        }
+        Console.WriteLine(sum);
     }
 }
