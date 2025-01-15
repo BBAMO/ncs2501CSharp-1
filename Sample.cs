@@ -2,21 +2,39 @@ using System.Xml.Serialization;
 
 class Sample
 {
-    public void RandomSum()
+    public void List()
     {
-        int sum = 0;
-        int[] nums = new int[10];
+        List<int> intlist = new List<int>();
+        List<char> charlist = new List<char>();
+        List<float> flist = new List<float>();
+        List<bool> blist = new List<bool>();
+        List<string> slist = new List<string>();
 
-        Random rand = new Random();
-        for (int i = 0; i < nums.Length; i++)
+        intlist.Add(0);
+        intlist.Add(2);
+
+        intlist.Remove(0);
+
+        int val = intlist.Count;
+        Console.WriteLine("intlist의 크기:" + val);
+
+        // linked list
+
+        LinkedList<string> list = new LinkedList<string>();
+        list.AddLast("Apple");
+        list.AddLast("Banana");
+        list.AddLast("Lemon");
+
+        LinkedListNode<string> node = list.Find("Banana");
+        LinkedListNode<string> newNode = new LinkedListNode<string>("Grape");
+
+        list.AddAfter(node, newNode);
+
+        list.ToList<string>().ForEach(p => Console.WriteLine(p));
+
+        foreach (var item in list)
         {
-            nums[i] = rand.Next() % 100;
-            Console.WriteLine("nums["+i+"]:" + nums[i]);
+            Console.WriteLine(item);
         }
-        for (int i = 0; i < nums.Length; i++)
-        {
-            sum += nums[i];
-        }
-        Console.WriteLine(sum);
     }
 }
