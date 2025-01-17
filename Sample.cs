@@ -1,7 +1,36 @@
+using System.Collections;
 using System.Xml.Serialization;
+using Microsoft.VisualBasic;
 
 class Sample
 {
+    public void Dictionary()
+    {
+        Hashtable ht = new Hashtable();
+        ht.Add("irina", "Irina Sp");
+        ht.Add("tom", "Tom Cr");
+
+        if (ht.Contains("tom"))
+        {
+            Console.WriteLine(ht["tom"]);
+        }
+
+        // dictionary
+        Dictionary<int, string> emp = new Dictionary<int, string>();
+        emp.Add(1001, "Jane");
+        emp.Add(1002, "Tom");
+        emp.Add(1003, "Cindy");
+        
+        Console.WriteLine("Count:" + emp.Count);
+
+        string name = emp[1002];
+        Console.WriteLine(name);
+        if (emp.ContainsKey(1004))
+        {
+            name = emp[1004];
+            Console.WriteLine(name);
+        }
+    }
     public void List()
     {
         List<int> intlist = new List<int>();

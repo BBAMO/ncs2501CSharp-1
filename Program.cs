@@ -7,10 +7,10 @@
         //string str = "I love you~";
         
         //Console.WriteLine(sol.solution01162(intarray, 1, 3));
-        Util.PrintIntArray(sol.solution01162(intarray, 1, 3));
+        //Util.PrintIntArray(sol.solution01162(intarray, 1, 3));
 
-        //Sample sam = new Sample();
-        //sam.Array();
+        Sample sam = new Sample();
+        sam.Dictionary();
         //sam.RandomSum();
         //sam.List();
     }
