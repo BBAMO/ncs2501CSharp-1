@@ -2,6 +2,56 @@ using System.Formats.Asn1;
 
 class Solution
 {
+    public int[] solution01172(int[] num_list)
+    {
+        int[] answer = new int[2];
+
+        foreach(var item in num_list)
+        {
+            if (item % 2 == 0)
+            {
+                answer[0]++;
+            }
+            else
+            {
+                answer[1]++;
+            }
+        }
+        
+        return answer;
+    }
+
+    /// <summary>
+    /// 머쓱이보다 키 큰 사람(foreach로 비교 출력)
+    /// </summary>
+    /// <param name="array"></param>
+    /// <param name="height"></param>
+    /// <returns></returns>
+    public int solution0117(int[] array, int height)
+    {
+        int answer = 0;
+
+        //for
+        /*
+        for(int i = 0; i < array.Length; i++)
+        {
+            if (array[i] > height)
+            {
+                answer++; //answer+=1을 줄인 모습
+            }
+        }
+        */
+        // foreach
+        foreach (var item in array)
+        {
+            if (item > height)
+            {
+                answer++;
+            }
+        }
+
+        return answer;
+    }
     public int[] solution01162(int[] numbers, int num1, int num2)
     {
         //리턴할 배열의 크기를 먼저 구한다
