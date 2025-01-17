@@ -6,6 +6,11 @@ class Sample
 {
     public void Dictionary()
     {
+        
+        //var
+        var dic = new Dictionary<int, int>(); // var로 간소화
+
+        //hashtable
         Hashtable ht = new Hashtable();
         ht.Add("irina", "Irina Sp");
         ht.Add("tom", "Tom Cr");
