@@ -1,7 +1,31 @@
 using System.Formats.Asn1;
+using System.Security.Cryptography;
 
 class Solution
 {
+    public int Solution0120(int slice, int n) 
+    {
+        int answer = 0;
+        // for문
+        //for (int i = 2; i <= n; i += slice)
+       // {
+       //     answer++; //한 판 추가
+       // }
+       // return answer;
+
+       // while
+       while (answer * slice < 0)
+       {
+        answer++;
+       }
+       return answer;
+    }
+
+    /// <summary>
+    /// 짝수 홀수 개수
+    /// </summary>
+    /// <param name="num_list"></param>
+    /// <returns></returns>
     public int[] solution01172(int[] num_list)
     {
         int[] answer = new int[2];
