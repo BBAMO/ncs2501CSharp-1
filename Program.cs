@@ -6,11 +6,11 @@
         int[] intarray = new int[]{1, 2, 3, 4, 5};
         string str = "I love you~";
         
-        //Console.WriteLine(sol.Solution0120(7, 10));
-        //Util.PrintIntArray(sol.solution01162(intarray, 1, 3));
+       //Console.WriteLine(sol.Solution0121(intarray));
+        Util.PrintIntArray(sol.Solution0121(intarray));
 
-        Sample sam = new Sample();
-        sam.StringBuilderSample();
+        //Sample sam = new Sample();
+        //sam.StringBuilderSample();
         //sam.RandomSum();
         //sam.List();
     }

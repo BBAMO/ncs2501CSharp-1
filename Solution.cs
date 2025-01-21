@@ -3,6 +3,26 @@ using System.Security.Cryptography;
 
 class Solution
 {
+    /// <summary>
+    /// 배열 곱하기
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    public int[] Solution0121(int[] numbers)
+    {
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            //numbers[i] = numbers[i] * 2;
+            numbers[i] *= 2;
+        }
+        return numbers;
+    }
+    /// <summary>
+    /// 피자 나누기
+    /// </summary>
+    /// <param name="slice"></param>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public int Solution0120(int slice, int n) 
     {
         int answer = 0;
