@@ -3,16 +3,17 @@
     private static void Main(string[] args)
     {
         Solution sol = new Solution();
-        int[] intarray = new int[]{1, 2, 3, 4, 5};
+        string[] str1 = new string[]{"a", "b", "c"};
+        string[] str2 = new string[]{"com", "b", "d", "p", "c"};
+        int[] intarray = new int[]{};
         string str = "I love you~";
         
-       //Console.WriteLine(sol.Solution0121(intarray));
-        Util.PrintIntArray(sol.Solution0121(intarray));
+       Console.WriteLine(sol.Solution0122(str1, str2));
+       // Util.PrintIntArray(sol.Solution0121(intarray));
 
         //Sample sam = new Sample();
-        //sam.StringBuilderSample();
-        //sam.RandomSum();
-        //sam.List();
+        //sam.EnumSample();
+        
     }
     
 }
