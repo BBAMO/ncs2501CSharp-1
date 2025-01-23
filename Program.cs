@@ -8,11 +8,11 @@
         int[] intarray = new int[]{};
         string str = "I love you~";
         
-       Console.WriteLine(sol.Solution0122(str1, str2));
-       // Util.PrintIntArray(sol.Solution0121(intarray));
+       //Console.WriteLine(sol.Solution0123(5500));
+        Util.PrintIntArray(sol.Solution0123(5500));
 
-        Sample sam = new Sample();
-        sam.Operator();
+        //Sample sam = new Sample();
+        //sam.Operator();
         
     }
     
