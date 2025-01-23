@@ -11,8 +11,8 @@
        Console.WriteLine(sol.Solution0122(str1, str2));
        // Util.PrintIntArray(sol.Solution0121(intarray));
 
-        //Sample sam = new Sample();
-        //sam.EnumSample();
+        Sample sam = new Sample();
+        sam.Operator();
         
     }
     

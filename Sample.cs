@@ -1,10 +1,70 @@
 using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using System.Xml.Serialization;
 using Microsoft.VisualBasic;
 
 class Sample
 {
+    public void Operator()
+    {
+        // 나머지 연산자 %
+
+        int a = (1 + 2 - 1) * (4 / 2) % 3;
+
+        // 할당 연산자 =, +=, -=, *=, %=
+
+        int b = 100;
+        a %= 2; // a를 2로 나눈 나머지
+
+        // 증감 연산자
+
+        a++; // a = a + 1 / a += 1
+        a--; // a = a - 1 / a -= 1
+
+        ++a; // 순서 차이. a++ 나중에 , ++a 맨 먼저
+
+        // 논리 연산자 &&(And), ||(Or), !(Not)
+
+        int c = 1, d = 2;
+        bool e = true;
+
+        if((a > 1 && b < 0) || c == 1 || !e) a = 0;
+
+        // 관계/비교 연산자 <, >, ==, !=, >=, <=
+
+        if (a <= b) a = 0;
+    
+        // 비트 연산자 &(AND), |(OR), ^(XOR)
+        // 비트 연산에서 &은 둘 다 1인 경우만 1이 되고, |는 둘 중에 하나라도 1인 경우 1이 되며, ^는 둘 중에 하나만 1인 경우 1이 된다.
+        
+        byte aa = 7;
+        byte bb = (byte)((aa & 3) | 4);
+        Console.WriteLine($"byte bb: {bb}");
+
+        // Shift 연산자 >>. <<
+        // << = *2, >> = /2
+        int i = 2;
+        i = i << 5; // i의 값을 왼쪽으로 5 비트 이동한다.
+        Console.WriteLine($"2 after left Shift 5: {i}");
+
+        // 조건 연산자 ?, ??(C# 3.0 이상만 지원, 왼쪽 값이 null일 경우 뒤의 값을 리턴)
+        int val = (a>b) ? a : b;
+        int? iii = null;
+        i = iii ?? 0;
+
+        string s = null;
+        //string ss = s ?? string.Empty;
+        string ss;;
+        if (s == null)
+        {
+            ss = string.Empty;
+        }
+        else
+        {
+            ss = s;
+        }
+    }
     enum City
     {
         Seoul, //0
