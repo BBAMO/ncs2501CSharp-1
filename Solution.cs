@@ -1,9 +1,62 @@
 using System.Formats.Asn1;
 using System.Globalization;
 using System.Security.Cryptography;
+using System.Text;
 
 class Solution
 {
+    public string Solution01242(string my_string, int s, int e)
+    {
+        /*
+        char[] chr = my_string.ToCharArray();
+        int len = e - s + 1;
+        Array.Reverse(chr, s, len);
+        string answer = new string(chr);
+        return answer;
+        */
+
+        char[] chr = my_string.ToCharArray();
+        Array.Reverse(chr, s, e - s + 1);
+        return new string(chr);
+    }
+
+    /// <summary>
+    /// 문자열 뒤집기
+    /// </summary>
+    /// <param name="my_string"></param>
+    /// <returns></returns>
+    public string Solution0124(String my_string)
+    {
+        string answer = string.Empty;
+        
+        /*
+        for (int i = 0; i < my_string.Length; i++)
+        {
+            answer = my_string[i] + answer;
+        }
+        
+        return answer;
+        */
+
+        /*
+        foreach (var item in my_string)
+        {
+            answer = item + answer;
+        }
+        
+        return answer;
+        */
+
+        StringBuilder sb = new StringBuilder();
+        foreach (var item in my_string)
+        {
+            sb.Insert(0, item);
+        }
+        
+        answer = sb.ToString();
+
+        return answer;
+    }
     /// <summary>
     /// 아이스 아메리카노
     /// </summary>
