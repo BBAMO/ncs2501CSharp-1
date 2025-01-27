@@ -5,6 +5,30 @@ using System.Text;
 
 class Solution
 {
+     public string Solution01272(string my_string) 
+    {
+        string answer = string.Empty;
+        //char[] mo = new char[5]{'a','e','i','o','u'};
+        answer = my_string.Replace("a", "").Replace("e", "")
+        .Replace("i", "").Replace("o", "").Replace("u", "");
+        return answer;
+    }
+
+    /// <summary>
+    /// 배열 원소의 길이
+    /// </summary>
+    /// <param name="strlist"></param>
+    /// <returns></returns>
+    public int[] Solution0127(string[] strlist)
+    {
+        int len = strlist.Length;
+        int[] answer = new int[len];
+        for (int i = 0; i < len; i++)
+        {
+            answer[i] = strlist[i].Length;
+        }
+        return answer;
+    }
     public string Solution01242(string my_string, int s, int e)
     {
         /*
