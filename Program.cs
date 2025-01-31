@@ -8,11 +8,14 @@
         int[] intarray = new int[]{};
         string str = "bus";
         
-       Console.WriteLine(sol.Solution01272(str));
+       //Console.WriteLine(sol.Solution01272(str));
         //Util.PrintIntArray(sol.Solution0127(str1));
 
-        //Sample sam = new Sample();
-        //sam.DoWhileSample();
+        Sample sam = new Sample();
+        foreach (int num in sam.GetNumber())
+        {
+            Console.WriteLine(num);
+        }
         
     }
     
