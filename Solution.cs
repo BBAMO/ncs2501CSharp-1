@@ -1,10 +1,49 @@
+using System.ComponentModel;
 using System.Formats.Asn1;
 using System.Globalization;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
 using System.Text;
 
 class Solution
 {
+    public int Solution01312(int n) 
+    {
+        int answer = 0;
+
+        int piz = n / 7;
+
+        int res = ((n % 7) == 0) ? 0 : 1;
+        answer = piz + res;
+
+        return answer;
+        /*
+        int answer = 0;
+        answer = n / 7;
+        if(n % 7 != 0)
+            answer++;
+        return answer;
+        */
+    }
+    /// <summary>
+    /// 배열 뒤집기
+    /// </summary>
+    /// <param name="num_list"></param>
+    /// <returns></returns>
+    public int[] Solution0131(int[] num_list)
+    {
+        int[] answer = new int[num_list.Length];
+        for (int i = 0; i < num_list.Length; i++)
+        {
+            answer[num_list.Length - 1 - i] = num_list[i];
+        }
+        return answer;
+    }
+    /// <summary>
+    /// 모음 제거
+    /// </summary>
+    /// <param name="my_string"></param>
+    /// <returns></returns>
      public string Solution01272(string my_string) 
     {
         string answer = string.Empty;
