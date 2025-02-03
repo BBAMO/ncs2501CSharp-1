@@ -7,6 +7,27 @@ using System.Text;
 
 class Solution
 {
+    /// <summary>
+    /// 첫 번째로 나오는 음수
+    /// </summary>
+    /// <param name="num_list"></param>
+    /// <returns></returns>
+    public int Solution0203(int[] num_list)
+    {
+        for (int i = 0; i < num_list.Length; i++)
+        {
+            if(num_list[i] < 0)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+    /// <summary>
+    /// 피자 나눠 먹기
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public int Solution01312(int n) 
     {
         int answer = 0;

@@ -5,10 +5,10 @@
         Solution sol = new Solution();
         string[] str1 = new string[]{"We", "are", "the", "world!"};
         string[] str2 = new string[]{"com", "b", "d", "p", "c"};
-        int[] intarray = new int[]{1,2,3,4,5};
+        int[] intarray = new int[]{12, 4, 15, 46, 38, -2, 15};
         string str = "bus";
         
-       //Console.WriteLine(sol.Solution01312(14));
+       Console.WriteLine(sol.Solution0203(intarray));
         //Util.PrintIntArray(sol.Solution0131(intarray));
 
         //Sample sam = new Sample();
@@ -17,7 +17,7 @@
             //Console.WriteLine(num);
         }
 
-        Util.MakeLotto();
+        //Util.MakeLotto();
         
     }
     
