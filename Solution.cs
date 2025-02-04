@@ -7,6 +7,53 @@ using System.Text;
 
 class Solution
 {
+    public string Solution02042(int[] numLog)
+    {
+        string answer = string.Empty;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < numLog.Length - 1; i++)
+        {
+            int val = numLog[i+1] - numLog[i];
+
+            if (val == 1)   sb.Append('w');
+            else if (val == -1) sb.Append('s');
+            else if (val == 10) sb.Append('d');
+            else if (val == -10) sb.Append('a');
+        }
+        answer = sb.ToString();
+        return answer;
+    }
+    /// <summary>
+    /// 수 조작하기 1
+    /// </summary>
+    /// <param name="n"></param>
+    /// <param name="control"></param>
+    /// <returns></returns>
+    public int Solution0204(int n, string control)
+    {
+        foreach (var item in control)
+        {
+            switch (item)
+            {
+                case 'w':
+                    n++;
+                    break;
+                case 's':
+                    n--;
+                    break;
+                case 'd':
+                    n += 10;
+                    break;
+                case 'a':
+                    n -= 10;
+                    break;
+                default:
+                    Console.WriteLine("Error!");
+                    break;
+            }
+        }
+        return n;
+    }
     /// <summary>
     /// 첫 번째로 나오는 음수
     /// </summary>
