@@ -6,6 +6,7 @@ using Microsoft.VisualBasic;
 
 class Sample
 {
+    
     public IEnumerable<int> GetNumber()
     {
         yield return 10; // 첫 번째 루프에서 리턴

@@ -7,6 +7,24 @@ using System.Text;
 
 class Solution
 {
+    public int Solution0205(int a, int b)
+    {
+        string temp = "" + a + b;
+
+        int hi = Convert.ToInt32(temp);
+
+        int hello = 2 * a * b;
+
+        if (hi >= hello)
+        {
+            return hi;
+        }
+        else
+        {
+            return hello;
+        }
+        
+    }
     public string Solution02042(int[] numLog)
     {
         string answer = string.Empty;
