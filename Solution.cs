@@ -7,6 +7,22 @@ using System.Text;
 
 class Solution
 {
+    public int[] Solution0206(int start, int end)
+    {
+        // 리턴할 배열의 크기를 먼저 구한다
+        int len = end - start + 1;
+        // 그 크기만큼 배열을 만든다
+        int[] answer = new int[len];
+       
+       // 크기만큼 반복
+        for (int i = 0; i < len; i++)
+        {
+            // 배열의 처음부터 start에 인덱스 값 더해서 넣는다
+            answer[i] = start + i;
+        }
+        // 배열 리턴
+        return answer;
+    }
     public int Solution0205(int a, int b)
     {
         string temp = "" + a + b;

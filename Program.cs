@@ -22,8 +22,8 @@
         int[] intarray = new int[]{0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1};
         string str = "wsdawsdassw";
         
-       //Console.WriteLine(sol.Solution02042(intarray));
-        //Util.PrintIntArray(sol.Solution0131(intarray));
+       //Console.WriteLine(sol.Solution0206(3, 10));
+        Util.PrintIntArray(sol.Solution0206(3, 10));
 
         //Sample sam = new Sample();
         //foreach (int num in sam.GetNumber())
@@ -33,9 +33,15 @@
 
         //Util.MakeLotto();
 
-        MyPoint pt = new MyPoint(10, 12);
-        Console.WriteLine(pt.ToString());
-        
+        //MyPoint pt = new MyPoint(10, 12);
+        //Console.WriteLine(pt.ToString());
+
+        MyCustomer myc = new MyCustomer(10);
+        MyCustomer myc2 = new MyCustomer();
+
+        // 필드를 public으로 하면 위험 / 원치 않는 값 지정 등을 외부에서 할 수 있기 때문
+        //myc.yearmoney = -1000;
+        //myc.SetYearMoney(-1000);
     }
     
 }
