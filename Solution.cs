@@ -7,6 +7,50 @@ using System.Text;
 
 class Solution
 {
+    public int Solution0207(int[] num_list)
+    {
+        int Ev = 0;
+        int Od = 0;
+        
+        for (int i = 0; i < num_list.Length; i++)
+        {
+            if (i % 2 == 1)
+            {
+                Od += num_list[i];
+            }
+            else
+            {
+                Ev += num_list[i];
+            }
+        }
+
+        return Math.Max(Ev, Od);
+        
+        /*
+        if (Ev > Od)
+        {
+            return Ev;
+        }
+        else if (Ev < Od)
+        {
+            return Od;
+        }
+        else
+        {
+            return Ev;
+        }
+        */
+
+
+
+    }
+
+    /// <summary>
+    /// 카운트 업
+    /// </summary>
+    /// <param name="start"></param>
+    /// <param name="end"></param>
+    /// <returns></returns>
     public int[] Solution0206(int start, int end)
     {
         // 리턴할 배열의 크기를 먼저 구한다

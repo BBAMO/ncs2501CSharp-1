@@ -19,11 +19,11 @@
         Solution sol = new Solution();
         string[] str1 = new string[]{"We", "are", "the", "world!"};
         string[] str2 = new string[]{"com", "b", "d", "p", "c"};
-        int[] intarray = new int[]{0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1};
+        int[] intarray = new int[]{4, 2, 6, 1, 7, 6};
         string str = "wsdawsdassw";
         
-       //Console.WriteLine(sol.Solution0206(3, 10));
-        Util.PrintIntArray(sol.Solution0206(3, 10));
+        Console.WriteLine(sol.Solution0207(intarray));
+        //Util.PrintIntArray(sol.Solution0207(4, 2, 6, 1, 7, 6));
 
         //Sample sam = new Sample();
         //foreach (int num in sam.GetNumber())
