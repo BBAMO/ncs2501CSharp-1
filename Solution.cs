@@ -7,6 +7,46 @@ using System.Text;
 
 class Solution
 {
+    public int[] Solution02112(int n)
+    {
+        int[] answer = new int[]{};
+        var list = new List<int>();
+        for (int i = 1; i <= n; i++)
+        {
+            if (i % 2 != 0)
+            {
+                list.Add(i);
+            }
+        }
+        return list.ToArray();
+    }
+
+    /// <summary>
+    /// 0 떼기
+    /// </summary>
+    /// <param name="n_str"></param>
+    /// <returns></returns>
+    public string Solution0211(string n_str)
+    {
+        string answer = string.Empty;
+        
+        bool zero = true;
+
+        while (zero)
+        {
+            //if (n_str[0] == '0')
+            if (n_str[0].CompareTo('0') == 0)
+            {
+                n_str = n_str.Substring(1); //n_str.Length);
+            }
+            else
+            {
+                zero = false;
+            }
+        }
+        answer = n_str;
+        return answer;
+    }
     public int Solution0207(int[] num_list)
     {
         int Ev = 0;

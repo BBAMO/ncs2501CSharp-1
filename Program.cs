@@ -20,10 +20,10 @@
         string[] str1 = new string[]{"We", "are", "the", "world!"};
         string[] str2 = new string[]{"com", "b", "d", "p", "c"};
         int[] intarray = new int[]{4, 2, 6, 1, 7, 6};
-        string str = "wsdawsdassw";
+        string str = "08540";
         
-        Console.WriteLine(sol.Solution0207(intarray));
-        //Util.PrintIntArray(sol.Solution0207(4, 2, 6, 1, 7, 6));
+        //Console.WriteLine(sol.Solution0211(str));
+        Util.PrintIntArray(sol.Solution02112(10));
 
         //Sample sam = new Sample();
         //foreach (int num in sam.GetNumber())
@@ -36,8 +36,8 @@
         //MyPoint pt = new MyPoint(10, 12);
         //Console.WriteLine(pt.ToString());
 
-        MyCustomer myc = new MyCustomer(10);
-        MyCustomer myc2 = new MyCustomer();
+        //MyCustomer myc = new MyCustomer(10);
+        //MyCustomer myc2 = new MyCustomer();
 
         // 필드를 public으로 하면 위험 / 원치 않는 값 지정 등을 외부에서 할 수 있기 때문
         //myc.yearmoney = -1000;
