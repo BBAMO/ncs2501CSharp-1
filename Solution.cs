@@ -7,6 +7,82 @@ using System.Text;
 
 class Solution
 {
+    /// <summary>
+    /// 주사위 게임 1
+    /// </summary>
+    /// <param name="a"></param>
+    /// <param name="b"></param>
+    /// <returns></returns>
+    public int Solution02122(int a, int b)
+    {
+        int answer = 0;
+
+        if (a % 2 == 1)
+        {
+            if (b % 2 == 1)
+            {
+                answer = a * a + b * b;
+            }
+            else
+            {
+                answer = 2 * (a + b);
+            }
+        }
+        else
+        {
+            if (b % 2 == 1)
+            {
+                answer = 2 * (a + b);
+            }
+            else
+            {
+                answer = Math.Abs(a - b); // 절대값 구하기
+            }
+        }
+
+        return answer;
+    }
+    /// <summary>
+    /// 뒤에서 5등 위로
+    /// </summary>
+    /// <param name="num_list"></param>
+    /// <returns></returns>
+    public int[] Solution0212(int[] num_list)
+    {
+        /*
+        // List 사용
+        var list = new List<int>(num_list);
+        // List 정렬(Sort)
+        list.Sort();
+        // index : for 문
+        var list2 = new List<int>();
+
+        for (int i = 5; i < list.Count; i++)
+        {
+            // 다른 list에 넣기
+            list2.Add(list[i]);
+        }
+        // list를 int[]로 변환해서 리턴
+        return list2.ToArray();
+        */  
+
+        var list = new List<int>(num_list);
+        
+        list.Sort();
+
+        for (int i = 0; i < 5; i++)
+        {
+            list.RemoveAt(0); // RemoveAt : 필요없는 항목 지우기
+        }
+        
+        return list.ToArray();
+    }
+   
+    /// <summary>
+    /// 홀수 정렬
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public int[] Solution02112(int n)
     {
         int[] answer = new int[]{};
